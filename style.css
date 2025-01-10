@@ -16,7 +16,6 @@ img{
     text-align: center;
 }
 
-
 .div-klass {
     border: solid 3px black;
     border-radius: 10px;
@@ -24,5 +23,32 @@ img{
 
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        flex-direction: row;
+    }
+    header{
+        grid-column: 1/3;
+    }
+}
 
+@media screen and (min-width: 1007px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr, 1fr,
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header{
+        grid-column: 1/3;
+    }
+}
 
